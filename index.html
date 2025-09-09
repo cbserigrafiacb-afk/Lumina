@@ -1,73 +1,86 @@
 <!doctype html>
-<main>
-<!-- Secciones / tarjetas -->
-<section class="grid">
-<a class="card" href="#remeras" aria-label="Ver remeras">
-<img src="assets/remeras.jpeg" alt="Ejemplo de remeras estampadas" loading="lazy" />
-<span>Remeras</span>
-</a>
-<a class="card" href="#tresd" aria-label="Ver impresiones 3D">
-<img src="assets/3d.jpeg" alt="Figura impresa en 3D" loading="lazy" />
-<span>3D</span>
-</a>
-<a class="card" href="#laser" aria-label="Ver grabados láser">
-<img src="assets/laser.jpeg" alt="Grabado láser sobre madera" loading="lazy" />
-<span>Grabados láser</span>
-</a>
-</section>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Lumina</title>
+  <meta name="description" content="Lumina — Estampados, 3D y Grabado Láser. Hecho con amor en Uruguay." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
 
+<body>
+  <header class="site-header">
+    <h1 class="brand">Lumina</h1>
+    <p class="tag">Creatividad en estampado, 3D y láser</p>
+  </header>
 
-<!-- Bloques ancla (por si luego quieres ampliar contenido) -->
-<section id="remeras" class="section-copy">
-<h2>Remeras</h2>
-<p>Estampados en serigrafía, DTF y vinilo textil con acabados duraderos y colores vibrantes.</p>
-</section>
+  <main>
+    <!-- Secciones / tarjetas -->
+    <section class="grid">
+      <a class="card" href="#remeras" aria-label="Ver remeras">
+        <img src="assets/remeras.jpeg" alt="Ejemplo de remeras estampadas" loading="lazy" />
+        <span>Remeras</span>
+      </a>
+      <a class="card" href="#tresd" aria-label="Ver impresiones 3D">
+        <img src="assets/3d.jpeg" alt="Figura impresa en 3D" loading="lazy" />
+        <span>3D</span>
+      </a>
+      <a class="card" href="#laser" aria-label="Ver grabados láser">
+        <img src="assets/laser.jpeg" alt="Grabado láser sobre madera" loading="lazy" />
+        <span>Grabados láser</span>
+      </a>
+    </section>
 
+    <!-- Bloques ancla -->
+    <section id="remeras" class="section-copy">
+      <h2>Remeras</h2>
+      <p>Estampados en serigrafía, DTF y vinilo textil con acabados duraderos y colores vibrantes.</p>
+    </section>
 
-<section id="tresd" class="section-copy">
-<h2>3D</h2>
-<p>Prototipado e impresión 3D para piezas, regalos personalizados y miniaturas.</p>
-</section>
+    <section id="tresd" class="section-copy">
+      <h2>3D</h2>
+      <p>Prototipado e impresión 3D para piezas, regalos personalizados y miniaturas.</p>
+    </section>
 
+    <section id="laser" class="section-copy">
+      <h2>Grabados láser</h2>
+      <p>Personalización sobre madera, cuero y acrílico con precisión profesional.</p>
+    </section>
 
-<section id="laser" class="section-copy">
-<h2>Grabados láser</h2>
-<p>Personalización sobre madera, cuero y acrílico con precisión profesional.</p>
-</section>
+    <!-- Contacto -->
+    <section id="contacto" class="contact">
+      <h2>Contacto</h2>
+      <form id="contact-form">
+        <label>
+          <span>Nombre</span>
+          <input name="name" type="text" placeholder="Tu nombre" required />
+        </label>
+        <label>
+          <span>Número</span>
+          <input name="phone" type="tel" inputmode="tel" placeholder="Tu teléfono" />
+        </label>
+        <label>
+          <span>Email</span>
+          <input name="email" type="email" inputmode="email" placeholder="tu@email.com" required />
+        </label>
+        <label>
+          <span>Mensaje</span>
+          <textarea name="message" rows="3" placeholder="Contanos qué necesitás"></textarea>
+        </label>
+        <button type="submit" class="btn-primary">Enviar</button>
+        <p class="form-note">Este formulario abre tu app de correo. (Configurable a WhatsApp o backend más adelante).</p>
+      </form>
+    </section>
+  </main>
 
+  <footer class="site-footer">
+    <small>© <span id="year"></span> Lumina. Todos los derechos reservados.</small>
+  </footer>
 
-<!-- Contacto -->
-<section id="contacto" class="contact">
-<h2>Contacto</h2>
-<form id="contact-form">
-<label>
-<span>Nombre</span>
-<input name="name" type="text" placeholder="Tu nombre" required />
-</label>
-<label>
-<span>Número</span>
-<input name="phone" type="tel" inputmode="tel" placeholder="Tu teléfono" />
-</label>
-<label>
-<span>Email</span>
-<input name="email" type="email" inputmode="email" placeholder="tu@email.com" required />
-</label>
-<label>
-<span>Mensaje</span>
-<textarea name="message" rows="3" placeholder="Contanos qué necesitás"></textarea>
-</label>
-<button type="submit" class="btn-primary">Enviar</button>
-<p class="form-note">Este formulario abre tu app de correo. (Configurable a WhatsApp o backend más adelante).</p>
-</form>
-</section>
-</main>
-
-
-<footer class="site-footer">
-<small>© <span id="year"></span> Lumina. Todos los derechos reservados.</small>
-</footer>
-
-
-<script src="main.js"></script>
+  <script src="main.js"></script>
 </body>
 </html>
+
